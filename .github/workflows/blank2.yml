@@ -1,0 +1,13 @@
+name: PR Checks
+
+on: [pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a pull request check
+      run: echo hello pr check
